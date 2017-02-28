@@ -50,6 +50,9 @@
       "System.GC.Server": true
     }
   },
+  "runtimes": {
+    "rhel.7.2-x64": {}
+  },
 
   "publishOptions": {
     "include": [
