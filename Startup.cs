@@ -37,8 +37,9 @@ namespace WebApplication10
             services.AddApplicationInsightsTelemetry(Configuration);
             services.AddDistributedRedisCache(option =>
             {
-                option.Configuration = Configuration.GetConnectionString("redis");
+                //option.Configuration = Configuration.GetConnectionString("redis");
                 option.InstanceName = "master";
+                option.Configuration = "localhost";
             }
                 );
 
