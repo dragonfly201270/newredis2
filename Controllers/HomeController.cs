@@ -17,13 +17,13 @@ namespace WebApplication10.Controllers
         public IActionResult Index()
         {
             
-            //string value = System.DateTime.Now.ToString();
+            string value = "fgbrygbfuhusrhughvurh";
            
                 
                // value = System.DateTime.Now.ToString();
-                _cache.SetString("CacheTime", fgbrygbfuhusrhughvurh);
+                _cache.SetString("CacheTime", value);
             
-            ViewData["CacheTime"] = fgbrygbfuhusrhughvurh;
+            ViewData["CacheTime"] = value;
             ViewData["CurrentTime"] = System.DateTime.Now.ToString();
             return View();
         }
